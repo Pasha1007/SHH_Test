@@ -66,6 +66,7 @@ main{
     width: 100vw;
     height: 10vh;
     padding: 2vh 7vw;
+    margin-top: 10vh;
 }
 
 .hero {
