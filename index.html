@@ -13,15 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="error" class="alert-block">     
+        <i class="ri-alert-line"></i>
+    </div>
     <header>
         <img src="./images/logo.png" alt="logo">
-        <a class="ri-menu-line ri-xl" id="burger" href="#"></a>
+        <i class="ri-menu-line ri-xl" id="burger" href="#"></i>
+        <nav class="nav-desktop">
+            <a>sign in</a>
+            <a class="ri-search-line ri-xl" ></a>
+            <a class="ri-shopping-cart-2-line ri-xl" ></a>
+        </nav>
+        <nav class="nav-mobile">
+            <a >sign in</a>
+            <a class="ri-search-line ri-xl" ></a>
+            <a class="ri-shopping-cart-2-line ri-xl" ></a>
+        </nav>
     </header>
-    <nav class="nav-mobile">
-            <a href="">sign in</a>
-            <a class="ri-search-line ri-xl" href=""></a>
-            <a class="ri-shopping-cart-2-line ri-xl" href=""></a>
-    </nav>
+    
     <main>
         <section class="hero">
             <h3>New Online Pharmacy Program Allows California Residents 
@@ -39,14 +48,14 @@
             </div>
             <p>In this program, you'll never pay extra for higher doses of ED medication. It's simple: no hidden fees for increased dosages, and no prescription is required. </p>
         </section>
-        <section class="quiz">
+        <section class="quiz" id="quiz-section">
             <div class="quiz-container">
                 <figure class="quiz-image">
-                    <img src="./images/quizPics/doc1.png" alt="Doctor">
+                    <img id="quiz-img" src="./images/quizPics/doc1.png" alt="Doctor">
                 </figure>
                 <div class="quiz-questions">
                     <article>
-                        <img src="./images/quiz_bg_mobile.png" alt="Quiz bg">
+                        <img src="./images/quiz_bg_mobile.png" alt="Quiz bg" id="quiz-bg">
                         <p>Just answer a few quick health-related questions in under two minutes, and you're good to go.</p>
                     </article>
 
@@ -59,9 +68,137 @@
                         <span>6</span>
                         <span>7</span>
                     </div>
+                    <div class="question-txt">
+                        <p id="question">Is the penis 8 inches or more in length? Is the penis 8 inches or more in length?</p>
+                    </div>
+                    <div class="answer-btns">
+                        <button id="yes-btn">yes</button>
+                        <button id="no-btn">no</button>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="game-changer">
+            <span class="game-heading">Revolutionary New Program:<br/>Natural Alternatives to Viagra at Unbeatable Prices</span>
+            <div class="article-title">
+                <h1>A Game-Changer in Men's Health</h1>
+            </div>
+            <article>
+                <p>&ensp;(Washington, D.C.) Exciting news for men in [Your Target Region]: A new program has been launched that offers natural alternatives to Viagra at a staggering 96% discount compared to retail prices at major pharmacies like CVS and Walgreens. This groundbreaking initiative is designed to provide safe, effective, and affordable options for men looking to enhance their sexual health without breaking the bank.
+                </p>
+            </article>
+        </section>
+        <section class="comment-section">
+            <div class="comment">
+                <div class="user-avatar">
+                    <img src="./images/avatar.png" alt="User Avatar">
+                    <div class="user-name">
+                        <p>Michael J.</p>
+                        <p>30 m<p>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    <p>I tried GroMax, and I have to say, it's the best alternative to Viagra I've ever used. The effects kick in quickly, and I feel more confident than ever before. I highly recommend it to anyone looking for an effective solution!</p>
+                </div>
+                <div class="stats-cont">
+                    <div class="reactions">
+                        <img src="./images/reactions.png" alt="">
+                        <p>You & 147 other</p>
+                    </div>
+                    <p>0 Comments</p>
+                </div>
+                <div class="actions-cont">
+                     <ul>
+                        <a><li><i class="ri-thumb-up-line"></i>Like</li></a>
+                        <a><li><i class="ri-chat-4-line"></i>Comment</li></a>
+                        <a><li><i class="ri-share-forward-line ri-xl"></i>Share</li></a> 
+                    </ul>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="user-avatar">
+                    <img src="./images/avatar.png" alt="User Avatar">
+                    <div class="user-name">
+                        <p>Michael J.</p>
+                        <p>30 m<p>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    <p>I tried GroMax, and I have to say, it's the best alternative to Viagra I've ever used. The effects kick in quickly, and I feel more confident than ever before. I highly recommend it to anyone looking for an effective solution!</p>
+                </div>
+                <div class="stats-cont">
+                    <div class="reactions">
+                        <img src="./images/reactions.png" alt="">
+                        <p>You & 147 other</p>
+                    </div>
+                    <p>0 Comments</p>
+                </div>
+                <div class="actions-cont">
+                     <ul>
+                        <a><li><i class="ri-thumb-up-line"></i>Like</li></a>
+                        <a><li><i class="ri-chat-4-line"></i>Comment</li></a>
+                        <a><li><i class="ri-share-forward-line ri-xl"></i>Share</li></a>
+                    </ul>
+                </div>
+                <div class="reply-cont">
+                    <div class="reply-user-avatar">
+                        <img src="./images/avatar.png" alt="User Avatar">
+                    </div>
+                    <div class="comment-content">
+                        <div class="reply-text"><strong>David W.</strong><br/>I've always looked for a natural way to improve my health, and GroMax is the perfect choice. These gummy bears are natural, free of harmful additives, and work better than any other product I've tried. I recommend it to anyone who values natural ingredients and effectiveness!</div>
+                        <div class="reply-actions">
+                            <span>Like</span> · <span>Reply</span> · <span>5m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="quiz-modal" class="overlay hidden">
+        <dialog class="modal" >
+            <h1>Congratulations!</h1>
+            <h3>You've won new program bears</h3>
+            <img src="./images/gummy.png" alt="">
+            <ul>
+                <li>Click on "OK" and then continue with the delivery page</li>
+                <li>Fill in the form to receive one free botle you have <div class="timer"><span id="timer"></span></div> minutes to do it</li>
+            </ul>
+            <form id="quiz-form" class="input-cont" method="post" action="./submit.php">
+                <input id="email-input" type="email" name="email" placeholder="Enter Mail" required>
+                <input type="hidden" name="answers" id="answers-input">
+                <button id="send-email" type="submit">send</button>
+            </form>
+        </dialog>
+        </div>
+        <footer>
+            <img src="./images/logo.png" alt="">
+            <div class="footer-links">
+                <a>About Men`s Health</a>
+                <a>Advertise</a>
+                <a>Other Hearst Subscriptions</a>
+                <a>Newsletter</a>
+                <a>Subscribe</a>
+                <a>Media Kit</a>
+                <a>Customer Care</a>
+                <a>Give a Gift</a>
+                <a>E-prints, Reprints</a>
+                <a>Manage Email Preferences</a>
+            </div>
+            <div class="footer-add-info">
+                <p>A Part of Hearst Digital Media<br/><br/>
+                We may earn commission from links on this page, but we only recommend products we back.<br/><br/>
+                ©2024 Hearst Magazines, Inc. All Rights Reserved.
+                </p>
+                <div class="add-info-links">
+                    <a >Privacy Notice</a>
+                    <a >CA Notice at Collection</a>
+                    <a >Yout CA Privacy Rights/Shine the Light</a>
+                    <a >DAA Industry Opt Out</a>
+                    <a >Terms of Use</a>
+                    <a >Site Map</a>
+                </div>
+            </div>
+            <div class="warn-block">Your Privacy Choices: Opt Out of Sale/Targeted Ads</div>
+        </footer>
     </main>
     <script src="script.js"></script>
 </body>
